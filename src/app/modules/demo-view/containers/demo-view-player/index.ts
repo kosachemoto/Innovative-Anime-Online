@@ -1,1 +1,0 @@
-export * from './demo-view-player.component';

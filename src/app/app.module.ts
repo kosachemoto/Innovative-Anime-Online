@@ -2,15 +2,15 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { DemoViewModule } from './modules/demo-view';
+import { TestModule } from './modules/test';
 
 import { AppComponent } from './app.component';
-import { DemoViewPlayerComponent } from './modules/demo-view/containers/demo-view-player';
+import { MainComponent } from './modules/test/containers/main';
 
 const routes = [
   {
     path: "demo-view",
-    component: DemoViewPlayerComponent
+    component: MainComponent
   }
 ]
 
@@ -20,7 +20,7 @@ const routes = [
   ],
   imports: [
     BrowserModule,
-    DemoViewModule,
+    TestModule,
     RouterModule.forRoot(routes)
   ],
   exports: [
