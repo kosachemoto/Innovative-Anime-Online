@@ -5,12 +5,12 @@ import { RouterModule, Routes } from '@angular/router';
 import { TestModule } from './modules/test';
 
 import { AppComponent } from './app.component';
-import { MainComponent } from './modules/test/containers/main';
+import { TestMainComponent } from './modules/test/containers/test-main';
 
 const routes = [
   {
-    path: "demo-view",
-    component: MainComponent
+    path: "test-main",
+    component: TestMainComponent
   }
 ]
 
@@ -24,7 +24,8 @@ const routes = [
     RouterModule.forRoot(routes)
   ],
   exports: [
-    RouterModule
+    RouterModule,
+    TestModule
   ],
   providers: [],
   bootstrap: [AppComponent]

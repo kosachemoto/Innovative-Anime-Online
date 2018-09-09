@@ -1,11 +1,15 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MainComponent } from './containers/main/main.component';
+
+import { TestMainComponent } from './containers/test-main';
+
 
 @NgModule({
   imports: [
     CommonModule
   ],
-  declarations: [MainComponent]
+  declarations: [
+    TestMainComponent
+  ]
 })
 export class TestModule { }
