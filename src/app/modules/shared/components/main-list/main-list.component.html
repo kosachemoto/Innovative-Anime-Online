@@ -1,3 +1,5 @@
-<p>
-  main-list works!
-</p>
+<ul>
+  <ng-container *ngFor="let playerListItem of playerList">
+    <app-main-list-item [playerListItem]="playerListItem"></app-main-list-item>
+  </ng-container>
+</ul>

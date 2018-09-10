@@ -5,14 +5,6 @@ import { RouterModule, Routes } from '@angular/router';
 import { TestModule } from './modules/test';
 
 import { AppComponent } from './app.component';
-import { TestMainComponent } from './modules/test/containers/test-main';
-
-const routes = [
-  {
-    path: "test-main",
-    component: TestMainComponent
-  }
-]
 
 @NgModule({
   declarations: [
@@ -20,8 +12,7 @@ const routes = [
   ],
   imports: [
     BrowserModule,
-    TestModule,
-    RouterModule.forRoot(routes)
+    TestModule
   ],
   exports: [
     RouterModule,
