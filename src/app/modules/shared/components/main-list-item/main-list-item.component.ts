@@ -5,7 +5,10 @@ import { PlayerListItem } from './../../models/player-list-item.model';
 @Component({
   selector: 'app-main-list-item',
   templateUrl: './main-list-item.component.html',
-  styleUrls: ['./main-list-item.component.css']
+  styleUrls: ['./main-list-item.component.css'],
+  host: {
+    'class': 'main-list-item'
+  }
 })
 export class MainListItemComponent implements OnInit {
 

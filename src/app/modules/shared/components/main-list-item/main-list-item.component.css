@@ -1,9 +1,9 @@
-.main-list-item {
+:host(.main-list-item) {
   transition: all;
   transition-duration: .1s;
   transition-timing-function: ease-in-out;
   display: grid;
-  margin: 10px;
+  margin: 10px; 
   padding: 10px;
   border: 5px solid transparent;
   grid-column-gap: 10px;
@@ -14,7 +14,7 @@
     "image description"
 }
 
-.main-list-item:hover {
+:host(.main-list-item:hover) {
   border: 5px solid orange;
 }
 

@@ -8,7 +8,7 @@ import { SharedModule } from '../shared/shared.module';
 
 const routes = [
   {
-    path: "test-main",
+    path: "",
     component: TestMainComponent
   }
 ]
